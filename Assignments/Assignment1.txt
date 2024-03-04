@@ -57,5 +57,5 @@ a = "Hello World"
 print(a[-3:-1])
 a.	rld
 b.	error
-c.	rl
+c.	rl 
 Ans: c. rl
