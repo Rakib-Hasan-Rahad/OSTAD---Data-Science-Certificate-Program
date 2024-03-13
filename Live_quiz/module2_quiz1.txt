@@ -1,0 +1,44 @@
+1.What is the output of the following code
+
+salary = 8000
+
+def printSalary():
+
+         salary = 12000
+
+         print("Salary:", salary)
+
+printSalary()
+
+print("Salary:", salary)
+
+Answer:.Salary: 12000 Salary: 8000
+2.What is the output of the following function call
+
+def fun1(name, age=20):
+
+         print(name, age)
+
+fun1('Emma')
+Answer: Emma 20
+3. 
+In Python, list is mutable
+answer: True
+4. What is the output of the following list assignment?
+
+aList = [4, 8, 12, 16]
+
+aList[1:4] = [20, 24, 28]
+
+print(aList)
+
+Answer: [4, 20, 24, 28]
+5. What is the output of the following for loop and range() function
+
+for num in range(-2,-5,-1):
+
+    print(num, end=", ")
+
+Answer:
+-2, -3, -4,
+
