@@ -1,0 +1,12 @@
+#print this List = [1, 5, 2, 9, 3, 22, 13] in ascending order using funcction
+code:
+def sorted_list(list):
+    list.sort()
+    return list
+    
+def main():
+    List = [1, 5, 2, 9, 3, 22, 13]
+    print(sorted_list(List))
+    
+main()
+    
