@@ -1,0 +1,18 @@
+QUestion: Write a function to make an hour-to-minute converter.
+Answer : 
+def main():
+    try:
+        hour = float(input("Hour: "))  
+        if hour < 0:
+            print("Invalid number")
+            return
+        minute = converter(hour)
+        print(f'Minute: {minute:.2f}')   
+    except ValueError:
+        print("Invalid input")
+
+def converter(hour):
+    minute = hour * 60
+    return minute
+
+main()
