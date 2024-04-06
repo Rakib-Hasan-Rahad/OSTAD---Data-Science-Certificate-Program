@@ -1,0 +1,35 @@
+1. **Point out the wrong statement here**  
+   **Correct Answer:** 2. Slicing is not possible in array.
+
+2. **What is the output of the following code?**
+   ```python
+   import numpy as np
+   arr = np.array([0, 1, 2])
+   print(arr + 2)
+   ```
+   **Correct Answer:** [2, 3, 4]
+
+3. **The most important object defined in NumPy is an N-dimensional array type called?**  
+   **Correct Answer:** 1. ndarray
+
+4. **Which is the correct syntax to make a DataFrame?**
+   Here array_2d is a two-dimensional array.
+   **Correct Answer:** all of above
+
+5. **my_list = numpy.array([-1,0,1]), here my_list is**
+   **Correct Answer:** 2. Array
+
+6. **What is the output of “numpy.arange(2,10,2)”**
+   **Correct Answer:** 3. 2, 4, 6, 8
+
+7. **Point out the wrong statement here**
+   **Correct Answer:** 2. A dataframe is immutable.
+
+8. **To get return evenly spaced numbers over a specified interval we use**
+   **Correct Answer:** 2. Linspace
+
+9. **What is the range of the values provided by random.rand function?**
+   **Correct Answer:** 3. 0 – 1
+
+10. **“df” is a dataframe and “c1” is a column so df[['c1']] is a**
+    **Correct Answer:** Dataframe
