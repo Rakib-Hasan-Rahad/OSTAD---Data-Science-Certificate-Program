@@ -1,0 +1,40 @@
+import pandas as pd
+import numpy as np
+
+data = {
+    'A': [21.0, np.nan, 22.0, 4.0, np.nan],
+    'B': [31, 32, 33, 34, 35],
+    'C': [np.nan, np.nan, np.nan, np.nan, np.nan],
+    'D': [46.0, 47.0, np.nan, 48.0, 49.0]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+def count_nan_values(df):
+    return df.isnull().sum().sum()
+
+def fill_forward(df):
+    return df.ffill()
+
+def fill_backward(df):
+    return df.bfill()
+
+def fill_with_zero(df):
+    return df.fillna(0)
+
+nan_count = count_nan_values(df)
+print("\nNumber of NaN values in the DataFrame:", nan_count)
+
+filled_forward = fill_forward(df)
+print("\nDataFrame after forward fill:")
+print(filled_forward)
+
+filled_backward = fill_backward(df)
+print("\nDataFrame after backward fill:")
+print(filled_backward)
+
+filled_with_zero = fill_with_zero(df)
+print("\nDataFrame after filling with zeros:")
+print(filled_with_zero)
