@@ -1,0 +1,18 @@
+import pandas as pd
+
+# Create the DataFrame
+data = {
+    'Car Model': ['BMW X5', 'BMW X5', 'BMW X5', 'BMW X5', 'BMW X5',
+                  'Audi A5', 'Audi A5', 'Audi A5', 'Audi A5', 'Audi A5',
+                  'Mercedez Benz C class', 'Mercedez Benz C class', 'Mercedez Benz C class', 'Mercedez Benz C class'],
+    'Mileage': [69000, 35000, 57000, 22500, 46000, 59000, 52000, 72000, 91000, 69000, 67000, 83000, 79000, 59000],
+    'Sell Price($)': [18000, 34000, 26100, 40000, 31500, 29400, 32000, 19300, 12000, 22000, 22000, 20000, 21000, 33000],
+    'Age(yrs)': [6, 3, 5, 2, 4, 5, 5, 6, 8, 6, 6, 7, 7, 5]
+}
+
+df = pd.DataFrame(data)
+
+# Perform one-hot encoding
+df_encoded = pd.get_dummies(df, columns=['Car Model'])
+
+print(df_encoded)
